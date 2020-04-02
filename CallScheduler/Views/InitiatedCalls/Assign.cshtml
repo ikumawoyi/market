@@ -1,0 +1,127 @@
+﻿@model InitiatedCall
+
+@{
+    ViewData["Title"] = "Assign";
+}
+
+<div class="light-skin fixed-navbar sidebar-scroll">
+    <div id="wrapper">
+        <div class="content content-boxed" style = "font-size:25px">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel blog-article-box hgreen">
+                        <div class="panel-heading">
+                            <h4>CallOrderNumber: @Model.CallOrderNumber </h4>
+                        </div>
+                        <div class="panel-body ">
+                            <p>
+                                <span>
+                                    <b>Bank Name: </b>  @Model.Bank.Name
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Machine Code: </b>  @Model.Machine.MachineCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Code: </b>  @Model.ErrorCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Description: </b>  @Model.ErrorDescription
+                                </span>
+                                <br />
+                                <div>
+                                    <small>Initiated by: <span class="font-bold">@Model.Initiator.Name</span></small>
+                                    <div class="text-muted small">
+                                        Initiated on: @Model.DateCreated.ToString("dd.MM.yyyy, hh:mm tt")
+                                    </div>
+                                </div>
+                                <br />
+                            </p>
+                            <br />
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-md-12 animate-box">
+                                    <form id="assign-call" method="post">
+                                        <input type="hidden" name="AssignerId" id="AssignerId" class="form-control" placeholder="AssignerId" value="@ViewData["AssignerId"]" style="text-align:center;">
+                                        <input type="hidden" name="Id" id="Id" class="form-control" placeholder="Id" value="@Model.Id" style="text-align:center;">
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                @Html.DropDownList("EngineerId", (SelectList)ViewBag.Engineers, "Select Engineer:",
+                                               htmlAttributes: new { @id = "EngineerId", @class = "form-control new-input", @placeholder = "Select Engineer:" })
+                                            </div>
+                                        </div>
+                                        @*<div class="row form-group">
+                                            <div class="col-md-12">
+                                                @Html.DropDownList("TeamLead", (SelectList)ViewBag.TeamLead, "Select TeamLead:",
+                                               htmlAttributes: new { @id = "TeamLead", @class = "form-control new-input", @placeholder = "Select TeamLead:" })
+                                            </div>
+                                        </div>*@
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <a class="btn btn-danger btn-sm" asp-area="" asp-controller="InitiatedCalls" asp-action="Index"
+                                                   asp-route-page="1" asp-route-pageSize="10" style="width:50%">Back</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="submit" value="Submit" id="btn-enter" class="btn btn-success btn-sm" style="width:50%; float:right;">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+        });
+
+        $('#assign-call').submit(function (event) {
+            console.log("submit!");
+            event.preventDefault();
+
+            var data = new FormData();
+            data.append("Id", $("#Id").val());
+            data.append("AssignerId", $("#AssignerId").val());
+            data.append("EngineerId", $("#EngineerId").val());
+            //data.append("TeamLead", $("#TeamLead").val());
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/initiatedcalls/assign',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+
+                    console.log(message);
+                    var loginSuccess = message.success;
+                    var loginStatus = message.status;
+                    if (loginSuccess == true) {
+                        $.showMessage(null, loginStatus);
+                        setTimeout(function () {
+                            var url = "/api/initiatedcalls/1/10";
+                            window.location.href = url;
+                        }, 2000);
+                    } else {
+                        $.showMessage(null, loginStatus);
+                    }
+                },
+                error: function () {
+                    $.showMessage(null, loginStatus);
+                }
+            });
+        });
+    </script>
+}

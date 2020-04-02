@@ -1,0 +1,66 @@
+﻿@model CustomUser
+
+@{
+    ViewData["Title"] = "Details";
+    var imageUrl = (string.IsNullOrEmpty(Model.ImageName) || Model.ImageName == "Invalid image file") ? "person1.jpg" : Model.ImageName;
+}
+
+<div class="light-skin fixed-navbar sidebar-scroll">
+    <div id="wrapper">
+        <div class="content content-boxed">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel blog-article-box hgreen">
+                        <div class="panel-heading">
+                            <h4>Username: @Model.UserName </h4>
+                        </div>
+                        <div class="panel-body ">
+                            <p>
+                                <a class="pull-left">
+                                    <img src="~/images/@imageUrl" alt="profile-picture" style="width:265px;height:235px;">
+                                </a>
+                            </p>
+                            <p>
+                                <span>
+                                    <b>First Name: </b>  @Model.FirstName
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Other Name: </b>  @Model.OtherName
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Last Name: </b>  @Model.LastName
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Email: </b>  @Model.Email
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Phone: </b>  @Model.PhoneNumber
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Role: </b>  @Model.RoleName
+                                </span>
+                                <br />
+                            </p>
+                            <br />
+                        </div>
+                        <div class="panel-footer">
+                            @*<div class="text-muted small">
+                                Created on: @Model.DateCreated.Value.ToString("dd.MM.yyyy, hh:mm tt")
+                            </div>*@
+                            <div align="center">
+                                <a class="btn btn-primary btn-sm" asp-area="" asp-controller="Users" asp-action="Index"
+                                   asp-route-page="1" asp-route-pageSize="1000">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

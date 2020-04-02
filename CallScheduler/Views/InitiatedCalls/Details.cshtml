@@ -1,0 +1,52 @@
+﻿@model InitiatedCall
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="light-skin fixed-navbar sidebar-scroll">
+    <div id="wrapper">
+        <div class="content content-boxed">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel blog-article-box hgreen">
+                        <div class="panel-heading">
+                            <h4>CallOrderNumber: @Model.CallOrderNumber </h4>
+                        </div>
+                        <div class="panel-body ">
+                            <p>
+                                <span>
+                                    <b>Bank Name: </b>  @Model.Bank.Name
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Machine Code: </b>  @Model.Machine.MachineCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Code: </b>  @Model.ErrorCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Description: </b>  @Model.ErrorDescription
+                                </span>
+                                <br />
+                            </p>
+                            <br />
+                        </div>
+                        <div class="panel-footer">
+                            <small>Initiated by: <span class="font-bold">@Model.Initiator.Name</span></small>
+                            <div class="text-muted small">
+                                Initiated on: @Model.DateCreated.ToString("dd.MM.yyyy, hh:mm tt")
+                            </div>
+                            <div align="center">
+                                <a class="btn btn-primary btn-sm" asp-area="" asp-controller="InitiatedCalls" asp-action="Index"
+                                   asp-route-page="1" asp-route-pageSize="10">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

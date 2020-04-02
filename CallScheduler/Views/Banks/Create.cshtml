@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div id="colorlib-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center colorlib-heading animate-box">
+                <h2>
+                    <span style="float:left;">Create Bank</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 animate-box">
+                <form asp-action="Create" id="create-bank" method="post">
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="BankCode" name="BankCode" class="form-control" placeholder="Bank Code">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="RcNo" name="RcNo" class="form-control" placeholder="Rc No">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="Name" name="Name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="ShortName" name="ShortName" class="form-control" placeholder="Short Name">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" id="Address" name="Address" class="form-control" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="Email" name="Email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="Phone" name="Phone" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="SLADuration" name="SLADuration" class="form-control" placeholder="SLA Duration">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="SLAAmount" name="SLAAmount" class="form-control" placeholder="SLA Amount">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="time" id="SLAStartTime" name="SLAStartTime" class="form-control" placeholder="SLA Start Time">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="time" id="SLAEndTime" name="SLAEndTime" class="form-control" placeholder="SLA End Time">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div align="center">
+                            <input type="submit" value="Submit" id="btn-enter" class="btn btn-primary" style="width:50%">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+            // $('#loading-div-submitmessage').hide();
+            // $('#submitMessage').prop('disabled', false);
+            // $('#submitMessage').css('background-color', "#32b6e6");
+        });
+
+        $('#create-bank').submit(function (event) {
+            console.log("submit!");
+            event.preventDefault();
+
+            // $('#loading-div-submitmessage').show();
+            //$('#submitMessage').prop('disabled', true);
+            //$('#submitMessage').css('background-color', "red");
+
+            // var $btn = $('#add-entertainment button').button('Adding new entertainment ...');
+
+            // var $btn = $('#create-report button').button('Saving Picture ...');
+            var data = new FormData();
+            data.append("BankCode", $("#BankCode").val());
+            data.append("RcNo", $("#RcNo").val());
+            data.append("Name", $("#Name").val());
+            data.append("ShortName", $("#ShortName").val());
+            data.append("Address", $("#Address").val());
+            data.append("Email", $("#Email").val());
+            data.append("Phone", $("#Phone").val());
+            data.append("SLADuration", $("#SLADuration").val());
+            data.append("SLAAmount", $("#SLAAmount").val());
+            data.append("SLAStartTime", $("#SLAStartTime").val());
+            data.append("SLAEndTime", $("#SLAEndTime").val());
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/banks/create',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+
+                    //$('#loading-div-submitmessage').hide();
+                    //$('#submitMessage').prop('disabled', true);
+                    //$('#submitMessage').css('background-color', "gray");
+
+                    console.log(message);
+                    var loginSuccess = message.success;
+                    var loginStatus = message.status;
+                    if (loginSuccess == true) {
+                        $.showMessage(null, loginStatus);
+                        setTimeout(function () {
+                            var url = "/api/banks/1/10";
+                            window.location.href = url;
+                            // location.reload();
+                        }, 2000);
+                        //setTimeout(function () {
+                        //    $('#BankCode').val('');
+                        //    $('#RcNo').val('');
+                        //    $('#Name').val('');
+                        //    $('#ShortName').val('');
+                        //    $('#Address').val('');
+                        //    $('#Email').val('');
+                        //    $('#Phone').val('');
+                        //    $('#SLADuration').val('');
+                        //    $('#SLAAmount').val('');
+                        //    $('#SLAStartTime').val('');
+                        //    $('#SLAEndTime').val('');
+                        //}, 2000);
+                    } else {
+                        //$('#submitMessage').prop('disabled', false);
+                        //$('#submitMessage').css('background-color', "blue");
+                        $.showMessage(null, loginStatus);
+                        // alert(loginStatus);
+                    }
+                },
+                error: function () {
+                    //                  $('#loading-div-submitreport').hide();
+                    //$('#submitMessage').prop('disabled', true);
+                    //$('#submitMessage').css('background-color', "blue");
+                    // $.showMessage(null, "An error occurred");
+                    $.showMessage(null, loginStatus);
+                    // alert("An error occurred");
+                }
+            });
+        });
+    </script>
+}
+

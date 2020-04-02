@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CallScheduler.Models.Schedule>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Call Schedules</h1>
+
+<p>
+    @*<a class="nav-link text-black-50 badge badge-info" asp-action="Create">Create New</a>*@
+</p>
+<table class="table" style = "font-size:25px">
+    <thead class=" text-primary">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CallId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CallOrderNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateToRun)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallOrderNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateToRun)
+            </td>
+            <td>
+                <a class="badge badge-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="badge badge-primary" asp-action="Details" asp-route-id="@item.Id">Details</a> @*|
+                <a class="badge badge-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

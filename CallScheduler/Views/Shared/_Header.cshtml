@@ -1,0 +1,235 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using CallScheduler.Models
+@using CallScheduler.Interfaces
+@inject IPermissionService Perm
+
+@{
+    // var institutionLogo = Perm.Logo ?? "501.jpg";
+    // var institutionLogo = string.IsNullOrEmpty(Perm.Logo) ? "501.jpg" : Perm.Logo;
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <img src="~/images/ArkLogo.png" alt="some text" width=60 height=40>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ARK TECHNOLOGIES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " style="font-size:50px" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+
+
+
+
+
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "Admin")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Calls" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Calls</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Schedules" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Call Schedules</a>
+                                </li>
+
+                            </ul>
+                        </li>}
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "Admin")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Users" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Users</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Parts" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Parts</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Machines" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Machines</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="MachineVariants" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Machine Variants</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Banks" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Banks</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Roles" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Roles</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Engineers" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Engineers</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Initiators" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Initiators</a>
+                                </li>
+
+                            </ul>
+                        </li>}
+
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "Assigner")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="Calls" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Calls</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="InitiatedCalls" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Initiated Calls</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="Parts" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Parts</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="Machines" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Machines</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="MachineVariants" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Machine Variants</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-success" asp-area="" asp-controller="Banks" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Banks</a>
+                                </li>
+
+                            </ul>
+                        </li>}
+
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "BankAdmin")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="InitiatedCalls" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Initiated Calls</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="Users" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Users</a>
+                                </li>
+
+
+                            </ul>
+                        </li>}
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "Initiator")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+
+                                <li>
+                                    <a class="nav-link text-black-50 badge badge-primary" asp-area="" asp-controller="InitiatedCalls" asp-action="Index"
+                                       asp-route-page="1" asp-route-pageSize="10">Initiated Calls</a>
+                                </li>
+                               
+
+                            </ul>
+                        </li>}
+
+
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "Engineer")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+                                <li class="nav-item">
+                                    <a class="dropdown-toggle nav-link text-primary" asp-area="" asp-controller="Calls" asp-action="EngineerView">Engineers' Calls</a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                    }
+
+                    @if (Perm.IsSignedIn && Perm.UserRole.Name == "TeamLead")
+                    {
+                        <li class="dropdown" style="font-size:50px">
+                            <a href="#" class="dropdown-toggle nav-link text-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calls <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+
+
+                                <li class="nav-item">
+                                    <a class="dropdown-toggle nav-link text-primary" asp-area="" asp-controller="Calls" asp-action="EngineerView">Engineers' Calls</a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                    }
+                </ul>
+                @if (Perm.IsSignedIn)
+                {
+                    <ul class="nav navbar-nav ml-auto" style = "font-size:40px">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link text-dark" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@Perm.CurrentUser.UserName <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" style="font-size:30px">
+                                <li><a class="nav-link text-dark" href="/Home/ChangePassword">Change Password</a></li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                }
+                else
+                {
+                    <ul class="nav navbar-nav ml-auto" style = "font-size:40px">
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                        </li>
+                    </ul>
+                }
+            </div>
+        </div>
+    </nav>
+</header>
+

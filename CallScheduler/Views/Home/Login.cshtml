@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+
+
+<div id="colorlib-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 animate-box" align="center" style="margin-left:10%;margin-top:10%;">
+                <h2>Login</h2>
+
+                <form id="login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" name="UserName" id="UserName" class="form-control" placeholder="Username" style="text-align:center;">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="password" name="Password" id="Password" class="form-control" placeholder="Password" style="text-align:center;">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" id="lonn" name="lonn" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" id="latt" name="latt" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary" style="width:50%;">Sign in</button>
+                            <a asp-area="" asp-controller="Home" asp-action="ResetPassword" style="color:#499bea;"> Forgot Password?</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            console.log("ready!");
+            getLocation();
+        });
+
+        function showLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            console.log("Latitude : " + latitude + " Longitude: " + longitude);
+
+            $('#latt').val(latitude.toFixed(4).toString());
+            $('#lonn').val(longitude.toFixed(4).toString());
+
+        }
+
+        function errorHandler(err) {
+            if (err.code == 1) {
+                alert("Error: Access is denied!");
+            } else if (err.code == 2) {
+                alert("Error: Position is unavailable!");
+            }
+        }
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                // timeout at 60000 milliseconds (60 seconds)
+                var options = { timeout: 60000 };
+                navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+            } else {
+                alert("Sorry, browser does not support geolocation!");
+            }
+        }
+
+
+        $(document).ready(function () {
+
+        });
+
+        $('#login').submit(function (event) {
+            event.preventDefault();
+            var $btn = $('#login button').button('Signing In ...');
+            $('#login button').text('Logging In ...');
+            $.ajax({
+                type: 'POST',
+                url: '/api/login',
+                data: $(this).serialize(),
+                dataType: 'json',
+                encode: true,
+                error: function (error) { console.log(error); $btn.button('reset'); $('#login button').text('Sign in'); }
+            })
+                .done(function (data) {
+                    if (data.success) { window.location.href = data.status; }
+                    else { $.showMessage(null, data.status); $('#login button').text('Sign in'); }
+                });
+        });
+    </script>
+}

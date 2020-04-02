@@ -1,0 +1,140 @@
+﻿
+@{
+
+    // var isAdmin = (bool)ViewData["IsAdmin"];
+   // var bankCode = (string)ViewData["BankCode"];
+
+    ViewData["Title"] = "Create";
+}
+
+<div id="colorlib-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center colorlib-heading animate-box">
+                <h2>
+                    <span style="float:left;">Create User</span>
+                    <a class="btn btn-danger btn-sm" style="float:right;" asp-area="" asp-controller="Users" asp-action="Index"
+                       asp-route-page="1" asp-route-pageSize="10">Back</a>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 animate-box">
+                <form id="create-user" method="post">
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="Email" name="Email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="Username" name="Username" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="FirstName" name="FirstName" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="OtherName" name="OtherName" class="form-control" placeholder="Other Name">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="text" id="LastName" name="LastName" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="Phone" name="Phone" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            @Html.DropDownList("RoleName", (SelectList)ViewBag.Roles, "Select Role:",
+                           htmlAttributes: new { @id = "RoleName", @class = "form-control new-input", @placeholder = "Select Role:" })
+                        </div>
+                        <div class="col-md-6">
+                            <input type="file" id="imageurl" class="form-control">
+                            <span style="color: #f00;">
+                                * upload photo
+                            </span>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                    <div class="form-group">
+                        <div align="center">
+                            <input type="submit" value="Submit" id="btn-enter" class="btn btn-primary" style="width:50%">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+        });
+
+        $('#create-user').submit(function (event) {
+            console.log("submit!");
+            event.preventDefault();
+
+            var fileUpload = $("#imageurl").get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            data.append("Email", $("#Email").val());
+            data.append("Username", $("#Username").val());
+            data.append("FirstName", $("#FirstName").val());
+            data.append("OtherName", $("#OtherName").val());
+            data.append("LastName", $("#LastName").val());
+            data.append("Phone", $("#Phone").val());
+            data.append("RoleName", $("#RoleName").val());
+           // data.append("BankCode", $("#BankCode").val());
+           // data.append("TeamLeadId", $("#TeamLeadId").val());
+
+            for (var i = 0; i < files.length; i++) {
+                data.append("file", files[i]);
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/users/create',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+
+                    console.log(message);
+                    var loginSuccess = message.success;
+                    var loginStatus = message.status;
+                    if (loginSuccess == true) {
+                        $.showMessage(null, loginStatus);
+                        setTimeout(function () {
+                            var url = "/api/users/1/10";
+                            window.location.href = url;
+                        }, 2000);
+                    } else {
+
+                      //  $('#BankCode').val('');
+                        $('#RoleName').val('');
+                        $('#Phone').val('');
+                        $('#LastName').val('');
+                        $('#OtherName').val('');
+                        $('#FirstName').val('');
+                        $('#Username').val('');
+                        $('#Email').val('');
+
+                        $.showMessage(null, loginStatus);
+                    }
+                },
+                error: function () {
+                    $.showMessage(null, loginStatus);
+                }
+            });
+        });
+    </script>
+}
+

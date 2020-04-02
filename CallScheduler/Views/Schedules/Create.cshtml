@@ -1,0 +1,45 @@
+﻿@model CallScheduler.Models.Schedule
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Schedule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CallId" class="control-label"></label>
+                <input asp-for="CallId" class="form-control" />
+                <span asp-validation-for="CallId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CallOrderNumber" class="control-label"></label>
+                <input asp-for="CallOrderNumber" class="form-control" />
+                <span asp-validation-for="CallOrderNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateCreated" class="control-label"></label>
+                <input asp-for="DateCreated" class="form-control" />
+                <span asp-validation-for="DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateToRun" class="control-label"></label>
+                <input asp-for="DateToRun" class="form-control" />
+                <span asp-validation-for="DateToRun" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="badge badge-primary" asp-action="Index">Back to List</a>
+</div>
+

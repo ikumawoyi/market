@@ -1,0 +1,340 @@
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.deps.json
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.json
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.dev.json
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.dll
+C:\Projects\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CoreCompileInputs.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfoInputs.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfo.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.input.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.output.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorCoreGenerate.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Assigners\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Create.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Details.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Download.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Timeline.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\FirstChangePassword.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ResetPassword.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Assign.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Create.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Details.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Header.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Messaging.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CopyComplete
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csprojAssemblyReference.cache
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
+C:\Projects\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.deps.json
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.json
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.dev.json
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.dll
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CoreCompileInputs.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfoInputs.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfo.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.input.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.output.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorCoreGenerate.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Assigners\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\BankAdmins\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Download.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\EngineerView.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Timeline.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\AddRole.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ChangePassword.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\FirstChangePassword.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ResetPassword.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Assign.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Delete.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Edit.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Header.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Messaging.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\TeamLeads\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cache
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cs
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CopyComplete
+C:\Users\AYOTUNDE IKUMAWOYI\Desktop\ARK\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csprojAssemblyReference.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.deps.json
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.json
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.dev.json
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.dll
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csprojAssemblyReference.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CoreCompileInputs.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfoInputs.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfo.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.input.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.output.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorCoreGenerate.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Assigners\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\BankAdmins\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Download.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\EngineerView.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Timeline.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\AddRole.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ChangePassword.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\FirstChangePassword.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ResetPassword.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Assign.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Header.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Messaging.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\TeamLeads\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cache
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cs
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\Ayotunde\Desktop\callSch\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CopyComplete
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.deps.json
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.json
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.runtimeconfig.dev.json
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.dll
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\bin\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CoreCompileInputs.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorAssemblyInfo.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfoInputs.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.AssemblyInfo.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.input.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.TagHelpers.output.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorCoreGenerate.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Assigners\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\BankAdmins\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Banks\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Download.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\EngineerView.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Calls\Timeline.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Engineers\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\AddRole.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ChangePassword.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\FirstChangePassword.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Home\ResetPassword.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Assign.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\InitiatedCalls\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Initiators\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Machines\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\MachineVariants\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Parts\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Header.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Messaging.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\TeamLeads\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.RazorTargetAssemblyInfo.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.Views.pdb
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.dll
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.pdb
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csproj.CopyComplete
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Incidents\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Incidents\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Incidents\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Incidents\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Incidents\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\CallScheduler.csprojAssemblyReference.cache
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Records\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Records\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Records\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Records\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Records\Index.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Cares\Create.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Cares\Delete.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Cares\Details.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Cares\Edit.g.cshtml.cs
+C:\Users\Ayotunde\Documents\CallScheduler\CallScheduler\obj\Debug\netcoreapp2.2\Razor\Views\Cares\Index.g.cshtml.cs

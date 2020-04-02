@@ -1,0 +1,89 @@
+﻿@model PaginatedList<CallTimeline>
+
+@using CallScheduler.Enums
+@using CallScheduler.Interfaces
+@inject IPermissionService Perm
+
+@{
+    ViewData["Title"] = "Call Timeline";
+    var index = (int)((Model.PageIndex - 1) * 10) + 1;
+    // var firstPage = 1;
+    var lastPage = ViewBag.NumberOfPages;
+}
+
+<div class="colorlib-blog" style = "font-size:25px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center colorlib-heading animate-box">
+                <h2>
+                    <span style="float:left;">Call Timeline for @ViewBag.CallOrderNumber</span>
+                    @if (Perm.UserRole.Name != "Engineer")
+                    {
+                        <a class="btn btn-primary btn-sm" style="float:right;" asp-area="" asp-controller="Calls" asp-action="Index"
+                           asp-route-page="1" asp-route-pageSize="10">Back</a>
+                    }
+                    else if (Perm.UserRole.Name == "Engineer")
+                    {
+
+                        <a class="btn btn-primary btn-sm" style="float:right;" asp-area="" asp-controller="Calls" asp-action="EngineerView"
+                           asp-route-page="1" asp-route-pageSize="10">Back</a>
+                    }
+                </h2>
+                @if (Model.Count == 0)
+                {
+                    <p>
+                        No Call Timeline available.
+                    </p>
+                }
+            </div>
+        </div>
+        @if (Model.Count != 0)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="panel-body no-border no-shadow">
+                            <div class="table-responsive">
+                                <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                                    <thead class=" text-primary">
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Call Order Number</th>
+                                            <th>Status</th>
+                                            <th>Start Time</th>
+                                            <th>End Time</th>
+                                            <th>Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var mess in Model)
+                                        {
+                                            <tr>
+                                                <td>@(index++)</td>
+                                                <td>@mess.CallOrderNumber</td>
+                                                <td>@mess.Status</td>
+                                                <td>@mess.DateCreated.ToString("dd MMM yy, HH:mm")</td>
+                                                <td>@if (mess.DateChanged.HasValue)
+                                                {<span>@mess.DateChanged.Value.ToString("dd MMM yy, HH:mm")</span>}</td>
+                                                <td>@mess.Duration</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

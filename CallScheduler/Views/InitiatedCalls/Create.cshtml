@@ -1,0 +1,98 @@
+﻿@model InitiatedCall
+@using CallScheduler.Interfaces
+@inject IPermissionService Perm
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div id="colorlib-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center colorlib-heading animate-box">
+                <h2>
+                    <span style="float:left;">Initiate Call</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 animate-box">
+                <form id="initiate-call" method="post">
+                    <input type="hidden" name="InitiatorId" id="InitiatorId" class="form-control" placeholder="InitiatorId" value="@ViewData["InitiatorId"]" style="text-align:center;">
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            @Html.DropDownList("MachineId", (SelectList)ViewBag.Machines, "Select Machine:",
+                           htmlAttributes: new { @id = "MachineId", @class = "form-control new-input", @placeholder = "Select Machine:" })
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="ErrorCode" name="ErrorCode" class="form-control" placeholder="Error Code">
+                        </div>
+                    </div>
+                    @*<div class="form-group">
+                       
+                        <div class="col-md-5">
+                             @Html.DropDownList("Zone", (IEnumerable<SelectListItem>)ViewBag.Zone, "Select Zone:",
+                           htmlAttributes: new { @id = "Zone", @class = "form-control new-input", @placeholder = "Select Zone:" })
+                        </div>
+                    </div>*@
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <textarea name="ErrorDescription" id="ErrorDescription" cols="30" rows="10" minlength="10" class="form-control" placeholder="Write something about the error..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div align="center">
+                            <input type="submit" value="Submit" id="btn-enter" class="btn btn-primary" style="width:50%">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+        });
+
+        $('#initiate-call').submit(function (event) {
+            console.log("submit!");
+            event.preventDefault();
+            
+            var data = new FormData();
+            data.append("InitiatorId", $("#InitiatorId").val());
+            data.append("MachineId", $("#MachineId").val());
+            data.append("ErrorCode", $("#ErrorCode").val());
+            data.append("ErrorDescription", $("#ErrorDescription").val());
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/initiatedcalls/create',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+                    console.log(message);
+                    var loginSuccess = message.success;
+                    var loginStatus = message.status;
+                    if (loginSuccess == true) {
+                        setTimeout(function () {
+                            $('#ErrorCode').val('');
+                            $('#ErrorDescription').val('');
+                            $.showMessage(null, loginStatus);
+                        }, 2000);
+                    } else {
+                        $.showMessage(null, loginStatus);
+                    }
+                },
+                error: function () {
+                    $.showMessage(null, loginStatus);
+                }
+            });
+        });
+    </script>
+}
+

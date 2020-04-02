@@ -1,0 +1,180 @@
+﻿@model Call
+@using CallScheduler.Enums
+@using CallScheduler.Interfaces
+@inject IPermissionService Perm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="light-skin fixed-navbar sidebar-scroll">
+    <div id="wrapper">
+        <div class="content content-boxed">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel blog-article-box hgreen">
+                        <div class="panel-heading">
+                            <h4>CallOrderNumber: @Model.CallOrderNumber </h4>
+                        </div>
+                        <div class="panel-body ">
+                            <p>
+                                <span>
+                                    <b>Bank Name: </b>  @Model.Bank.Name
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Machine Code: </b>  @Model.Machine.MachineCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Code: </b>  @Model.ErrorCode
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Error Description: </b>  @Model.ErrorDescription
+                                </span>
+                                <br />
+                                <span>
+                                    <b>Current Status: </b>  @Model.Status
+                                </span>
+                                <br />
+                                <div>
+                                    <small>Initiated by: <span class="font-bold">@Model.Initiator.Name</span></small>
+                                    <div class="text-muted small">
+                                        Initiated on: @Model.DateCreated.ToString("dd.MM.yyyy, hh:mm tt")
+                                    </div>
+                                    <small>Assigned by: <span class="font-bold">@Model.Assigner.Name</span></small>
+                                    <div class="text-muted small">
+                                        Assigned to: @Model.Engineer.Name
+                                    </div>
+                                </div>
+                                <br />
+                            </p>
+                            <br />
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-md-12 animate-box">
+                                    <form id="change-status" method="post">
+                                        <input type="hidden" name="Id" id="Id" class="form-control" placeholder="Id" value="@Model.Id" style="text-align:center;">
+                                        @if (Perm.UserRole.Name == "Assigner")
+                                        {
+                                            <input type="hidden" name="Status" id="Status" class="form-control" placeholder="Status" value="@Model.Status" style="text-align:center;">
+                                        }
+                                        else if (Perm.UserRole.Name == "Engineer")
+                                        {
+                                            <div class="row form-group">
+                                                <div class="col-md-12">
+                                                    @Html.DropDownList("Status", (SelectList)ViewBag.Statuses, "Select Status:",
+                                                   htmlAttributes: new { @id = "Status", @class = "form-control new-input", @placeholder = "Select Status:" })
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col-md-12">
+                                                    <fieldset style="border: 1px solid lightgray; padding-left: 20px">
+                                                        <legend>Available Parts:</legend>
+                                                        @{
+                                                            List<Part> parts = ViewBag.CallParts;
+
+                                                            foreach (var part in parts)
+                                                            {
+                                                                <input type="checkbox"
+                                                                       class="partcodes"
+                                                                       name="selectedparts"
+                                                                       value="@part.Name" ) />
+                                                                @part.Name
+                                                                @:<br />
+                                                            }
+                                                        }
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        }
+                                            <div class="row form-group">
+                                                @if (Perm.UserRole.Name != "Engineer")
+                                                {
+                                                    <div class="col-md-6">
+                                                        <a class="btn btn-danger btn-sm" asp-area="" asp-controller="Calls" asp-action="Index"
+                                                           asp-route-page="1" asp-route-pageSize="10" style="width:50%">Back</a>
+                                                    </div>
+                                                }
+                                                else if (Perm.UserRole.Name == "Engineer")
+                                                {
+                                                    <div class="col-md-6">
+                                                        <a class="btn btn-danger btn-sm" asp-area="" asp-controller="Calls" asp-action="EngineerView"
+                                                           asp-route-page="1" asp-route-pageSize="10" style="width:50%">Back</a>
+                                                    </div>
+                                                }
+                                                @if (Perm.UserRole.Name == "Assigner")
+                                                {
+                                                    <div class="col-md-6">
+                                                        <input type="submit" value="Approve" id="btn-enter" class="btn btn-success btn-sm" style="width:50%; float:right;">
+                                                    </div>
+                                                }
+                                                else if (Perm.UserRole.Name == "Engineer" && Model.Status != CallStatus.Completed)
+                                                {
+                                                    <div class="col-md-6">
+                                                        <input type="submit" value="Change Status" id="btn-enter" class="btn btn-success btn-sm" style="width:50%; float:right;">
+                                                    </div>
+                                                }
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+        });
+
+        $('#change-status').submit(function (event) {
+            console.log("submit!");
+            event.preventDefault();
+
+            var parts = [];
+            $.each($("input[name='selectedparts']:checked"), function () {
+                parts.push($(this).val());
+            });
+            
+            var data = new FormData();
+            data.append("Id", $("#Id").val());
+            data.append("Status", $("#Status").val());
+            data.append("Parts", parts.join(","));
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/calls/changestatus',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+                    console.log(message);
+                    var loginSuccess = message.success;
+                    var loginStatus = message.status;
+                    if (loginSuccess == true) {
+                        $.showMessage(null, loginStatus);
+                        setTimeout(function () {
+                            var url = "/api/calls/1/10";
+                            window.location.href = url;
+                        }, 2000);
+                    } else {
+                        $.showMessage(null, loginStatus);
+                    }
+                },
+                error: function () {
+                    $.showMessage(null, loginStatus);
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewData["Title"] = "EngineerView";
+}
+
+
+
+<script>
+    // Set global variable
+    var watchID;
+    function showPosition() {
+        if (navigator.geolocation) {
+            watchID = navigator.geolocation.watchPosition(successCallback);
+        } else {
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
+    function successCallback(position) {
+        toggleWatchBtn.innerHTML = "Stop Watching";
+
+        // Check position has been changed or not before doing anything
+        if (prevLat != position.coords.latitude || prevLong != position.coords.longitude) {
+
+            // Set previous location
+            var prevLat = position.coords.latitude;
+            var prevLong = position.coords.longitude;
+
+            // Get current position
+            var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+            document.getElementById("result").innerHTML = positionInfo;
+
+        }
+
+    }
+    function startWatch() {
+        var result = document.getElementById("result");
+
+        var toggleWatchBtn = document.getElementById("toggleWatchBtn");
+
+        toggleWatchBtn.onclick = function () {
+            if (watchID) {
+                toggleWatchBtn.innerHTML = "Start Watching";
+                navigator.geolocation.clearWatch(watchID);
+                watchID = false;
+            }
+            else {
+                toggleWatchBtn.innerHTML = "Aquiring Geo Location...";
+                showPosition();
+            }
+        }
+    }
+
+    // Initialise the whole system (above)
+    window.onload = startWatch;
+</script>
+
+<h2>EngineerView</h2>
+
+@model IEnumerable<CallScheduler.Models.Call>
+
+<div class="card-deck">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card-group" style="width:auto">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Completed Calls of @ViewData["EngineerName"]</p>
+                            <div id="resultsList"></div>
+                            @ViewData["CompletedCallCount"]
+                        </blockquote>
+                    </div>
+                </div>
+            
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Calls of @ViewData["EngineerName"] Pending on Bank</p>
+                            <div id="resultsList"></div>
+                            @ViewData["EngineerUncompletedCall"]
+                        </blockquote>
+                    </div>
+                </div>
+               <div class="card bg-danger">
+                    <div class="card-body text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Calls Pending on @ViewData["EngineerName"]</p>
+                            <div id="resultsList"></div>
+                            @ViewData["CallPendingOnB"]
+                        </blockquote>
+                    </div>
+                </div>
+              <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Calls of @ViewData["EngineerName"] Pending on Part</p>
+                            <div id="resultsList"></div>
+                            @ViewData["CallPendingOnE"]
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Calls of @ViewData["EngineerName"] Completed</p>
+                            <div id="resultsList"></div>
+                            @ViewData["CallPendingOnP"]
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br />
+
+
+
+
+    <button type="button" id="toggleWatchBtn" class="btn btn-primary">Report Location</button>
+    <div id="result">
+
+    </div>
+
+
+
+
+    <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped" style="font-size:25px">
+        <thead class=" text-primary">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CallOrderNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ErrorDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ErrorCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EngineerLocation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SLADuration)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SLAAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Assigner)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Engineer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bank)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Machine)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MetSLA)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsCompleted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateCreated)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateUpdated)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateCompleted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Parts)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CallOrderNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ErrorDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ErrorCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EngineerLocation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SLADuration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SLAAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Assigner.FirstName) @Html.DisplayFor(modelItem => item.Assigner.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Engineer.FirstName) @Html.DisplayFor(modelItem => item.Engineer.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bank.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Machine.MachineCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MetSLA)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsCompleted)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateCreated)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateUpdated)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateCompleted)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Parts)
+                    </td>
+
+                    <td>
+                        @*<a asp-action="Edit" asp-route-id="@item.Id">Add comment</a>*@
+                        <a class="badge badge-primary" asp-area="" asp-controller="Calls" asp-action="Details"
+                           asp-route-id="@item.Id">Details</a> |
+                        <a class="badge badge-success" asp-area="" asp-controller="Calls" asp-action="Timeline"
+                           asp-route-id="@item.Id">Timeline</a>
+                        @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                        @*@if (!item.IsCompleted)
+        {
+            <a asp-action="ChangeStatus" asp-route-id="@item.Id" class="badge badge-success">Change Status</a>
+        }*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+

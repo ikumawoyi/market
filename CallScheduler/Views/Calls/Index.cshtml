@@ -1,0 +1,239 @@
+﻿@model PaginatedList<Call>
+@using CallScheduler.Enums
+@using CallScheduler.Interfaces
+@inject IPermissionService Perm
+@{
+    ViewData["Title"] = "Calls";
+    var index = (int)((Model.PageIndex - 1) * 10) + 1;
+    // var firstPage = 1;
+    var lastPage = ViewBag.NumberOfPages;
+    var nTransactions = (int)(Model.Count - 1);
+}
+
+<div class="colorlib-blog" style = "font-size:25px">
+    <div class="container">
+        <div class="row">
+            @if (Perm.UserRole.Name != "Engineer")
+            {
+                <div class="col-md-6 text-center colorlib-heading animate-box" style="float:left;">
+                    <h2>
+                        <span style="float:left;">Calls</span>
+                    </h2>
+                    @if (Model.Count == 0)
+                    {
+                        <p>
+                            No Call available.
+                        </p>
+                    }
+                </div>
+                <div class="col-md-6" align="right">
+                    <form asp-controller="Calls" asp-action="Download">
+                        <div style="display: none;">
+                            <fieldset style="border: 1px solid lightgray; padding-left: 20px">
+                                @{
+                                    List<Call> listCalls = (List<Call>)ViewData["listCalls"];
+                                    foreach (var call in listCalls)
+                                    {
+                                        <input type="checkbox"
+                                               class="settingcheckboxes"
+                                               name="selectedCalls"
+                                               value="@call.Id" checked="checked" />
+                                        @call.Id
+                                        @:<br />
+                                    }
+                                }
+                            </fieldset>
+                            <input type="text" name="Calls" id="Calls" class="form-control" value="">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-primary">Export to Excel</button>
+                    </form>
+                </div>
+
+                <!-- /.box-header -->
+                <div class="col-md-12" style="margin-top:2%; margin-bottom:2%;padding-top:2%;padding-bottom:2%;border: 1px ridge lightgrey;">
+                    <form asp-controller="Calls" asp-action="Index">
+                        <div class="well">
+                            <fieldset class="form-horizontal">
+                                <div class="row" style="font-size:15px">
+                                    <div class="col-md-3">
+                                        @Html.TextBox("SearchCON", ViewBag.CurrentCON as string, htmlAttributes: new { @class = "form-control", @placeholder = "Search by call order number" })
+                                    </div>
+                                    <div class="col-md-3">
+                                        @Html.DropDownList("SearchBank", (SelectList)ViewBag.Banks, "Search by bank", htmlAttributes: new { @class = "form-control", @placeholder = "Search by bank" })
+                                    </div>
+                                    <div class="col-md-3">
+                                        @Html.DropDownList("SearchEngineer", (SelectList)ViewBag.Engineers, "Search by engineer", htmlAttributes: new { @class = "form-control", @placeholder = "Search by engineer" })
+                                    </div>
+                                    <div class="col-md-3">
+                                        @Html.DropDownList("SearchInitiator", (SelectList)ViewBag.Initiators, "Search by initiator", htmlAttributes: new { @class = "form-control", @placeholder = "Search by initiator" })
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="control-label" for="Start">Start Date</label>
+                                        <input type="text" id="start" name="start" class="from-control" style="float:right;">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label" for="End">End Date</label>
+                                        <input type="text" id="end" name="end" class="from-control" style="float:right;">
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.CheckBox("completed", (bool)ViewBag.Completed)
+                                        <label class="control-label">Search Completed Calls</label>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-8" align="left">
+                                        @if (Model.Count != 0)
+                                        {
+                                            <p style="color:darkblue">Viewing @index - @(index + nTransactions) of @ViewData["nTrans"] Results</p>
+                                            <p style="color:darkblue">@ViewData["DisplayMessage"]</p>
+                                        }
+                                    </div>
+                                    <div class="col-md-4" align="right">
+                                        <input type="submit" value="Search" class="btn btn-success" />
+                                        <a class="btn btn-danger" asp-area="" asp-controller="Calls" asp-action="Index"
+                                           asp-route-page="1" asp-route-pageSize="10">Reset</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+                @if (Model.Count != 0)
+                {
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hpanel">
+                                <div class="panel-heading">
+                                    <div class="panel-tools">
+                                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                        <a class="closebox"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body no-border no-shadow">
+                                    <div class="table-responsive">
+                                        <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                                            <thead class=" text-primary">
+                                                <tr>
+                                                    <th>S/N</th>
+                                                    <th>Order Number</th>
+                                                    <th>Terminal Code</th>
+                                                    <th>Location</th>
+                                                    <th>Bank</th>
+                                                    <th>Initiator</th>
+                                                    <th>Assigner</th>
+                                                    <th>Engineer</th>
+                                                    <th>SLA Status</th>
+                                                    <th>Parts</th>
+                                                    <th>Time Initiated</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var mess in Model)
+                                                {
+                                                    <tr>
+                                                        <td>@(index++)</td>
+                                                        <td>@mess.CallOrderNumber</td>
+                                                        <td>@mess.Machine.MachineCode</td>
+                                                        <td>@mess.Machine.Location</td>
+                                                        <td>@mess.Bank.Name</td>
+                                                        <td>@mess.Initiator.Name</td>
+                                                        <td>@mess.Assigner.Name</td>
+                                                        <td>@mess.Engineer.Name</td>
+                                                        <td>@mess.MetSLA</td>
+                                                        <td>@mess.Parts</td>
+                                                        <td>@mess.DateCreated.ToString("dd MMM yy, HH:mm")</td>
+                                                        <td>
+                                                            <a class="badge badge-primary" asp-area="" asp-controller="Calls" asp-action="Details"
+                                                               asp-route-id="@mess.Id">Details</a> |
+                                                            <a class="badge badge-success" asp-area="" asp-controller="Calls" asp-action="Timeline"
+                                                               asp-route-id="@mess.Id">Timeline</a>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else if (Perm.UserRole.Name == "Engineer")
+            {
+                                        <p>Please click <a class="badge badge-danger" asp-area="" asp-controller="Calls" asp-action="EngineerView">Back</a> to navigate to your page</p>
+                
+            }
+        </div>
+    </div>
+</div>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <link href="~/js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $("#datepicker").datepicker();
+        $("#start").datepicker();
+        $("#end").datepicker();
+    </script>
+
+    @section scripts{
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                console.log("ready!");
+                var calls = [];
+                $.each($("input[name='selectedCalls']"), function () {
+                    calls.push($(this).val());
+                });
+                var data = calls.join(",");
+                $('#Calls').val(data);
+            });
+
+            $('#export-calls').submit(function (event) {
+                console.log("submit!");
+                event.preventDefault();
+
+                var calls = [];
+                $.each($("input[name='selectedCalls']"), function () {
+                    calls.push($(this).val());
+                });
+
+                var data = new FormData();
+                data.append("Calls", calls.join(","));
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/calls/exportcalls',
+                    contentType: false,
+                    processData: false,
+                    data: data,
+                    success: function (message) {
+                        console.log(message);
+                        var loginSuccess = message.success;
+                        var fileGuid = message.status;
+                        if (loginSuccess == true) {
+                            $.showMessage(null, "Calls have been exported to Calls-Report.xlsx file");
+                            setTimeout(function () {
+                                var fileName = "Calls-Report.xlsx";
+                                window.location = '/Calls/download/' + fileGuid;
+                            }, 2000);
+                        } else {
+                            $.showMessage(null, loginStatus);
+                        }
+                    },
+                    error: function () {
+                        $.showMessage(null, loginStatus);
+                    }
+                });
+            });
+        </script>
+    }
+
